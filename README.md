@@ -9,7 +9,7 @@ A touchable jQuery lightbox.
 
 Swipebox is a jQuery "lightbox" plugin for desktop, mobile and tablet.
 
-## What's the difference between Super-Swipebox and the Original Swipebox ?
+## What's the difference between Super Swipebox and the Original Swipebox ?
 
 - Minimalism 1: all unnecessary files removed
 - Minimalism 2: jQuery is already within the JS file to reduce chain file requests
