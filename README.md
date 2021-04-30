@@ -34,7 +34,7 @@ Chrome, Safari, Firefox, Opera, IE9+, IOS4+, Android, windows phone.
 
 ### Javascript
 
-Include jquery and the swipebox script in your head tags or right before your body closing tag.
+Include jquery and the swipebox script in your head tags or right before your body closing tag. If you already using jQuery elsewhere, please remove lines 1 - 3 in the JS file.
 
 ```html
 <script src="swipebox/swipebox.js"></script>
