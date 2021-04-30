@@ -1,4 +1,4 @@
-Swipebox
+Super Swipebox
 ================================
 
 A touchable jQuery lightbox.
@@ -8,6 +8,14 @@ A touchable jQuery lightbox.
 ## What is Swipebox ?
 
 Swipebox is a jQuery "lightbox" plugin for desktop, mobile and tablet.
+
+## What's the difference between Super-Swipebox and the Original Swipebox ?
+
+- Minimalism 1: all unnecessary files removed
+- Minimalism 2: jQuery is already within the JS file to reduce chain file requests
+- Firing the plugin happens already inside the JS file
+- no class attributes needed. Just link to the JPG, GIF or PNG file
+- double sized icons
 
 ## Features
 
@@ -29,8 +37,7 @@ Chrome, Safari, Firefox, Opera, IE9+, IOS4+, Android, windows phone.
 Include jquery and the swipebox script in your head tags or right before your body closing tag.
 
 ```html
-<script src="lib/jquery-3.5.2.js"></script>
-<script src="src/js/jquery.swipebox.js"></script>
+<script src="swipebox/swipebox.js"></script>
 ```
 
 ### CSS
@@ -38,23 +45,15 @@ Include jquery and the swipebox script in your head tags or right before your bo
 Include the swipebox CSS style in your head tags.
 
 ```html
-<link rel="stylesheet" href="src/css/swipebox.css">
+<link rel="stylesheet" href="swipebox/swipebox.css">
 ```
 
 ### HTML
 
-Use a specific class for your links and use the title attribute as caption.
+Just link the image (JPG, GIF or PNG) and optionally use the title attribute as caption.
 
 ```html
-<a href="big/image.jpg" class="swipebox" title="My Caption">
-```
-
-### Fire the plugin
-
-Bind the swipebox behaviour on every link with the "swipebox" class.
-
-```javascript
-$( '.swipebox' ).swipebox();
+<a href="big/image.jpg" title="My Caption">
 ```
 
 ### Options
@@ -79,11 +78,3 @@ useSVG: true
 nextSlide: function(){} // called on next slide, works for next button, arrow keys and touch navigation
 prevSlide: function(){} // called on previous slide, works for previous button, arrow keys and touch navigation
 ```
-
-### Pull Requests
-
-I want to keep this plugin as simple as possible. I won't merge pull requests for additional features such as download buttons, social like buttons, IE8 compatibility etc... But feel free to fork the project and customize it to suit to your needs. Most wanted PR are for bug fixes. Also, a future improvement will be to allow zoom on touchable devices.
-
-If you want to submit a pull request please be sure to grunt the whole thing (mostly jshintrc validation and minified file) and send me a demo URL. Also, please comment your code.
-
-Thanks for your understanding and thank you all for your helpful support!
