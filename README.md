@@ -12,9 +12,9 @@ Swipebox is a jQuery "lightbox" plugin for desktop, mobile and tablet.
 ## What's the difference between Super Swipebox and the Original Swipebox ?
 
 - Minimalism 1: all unnecessary files removed
-- Minimalism 2: jQuery is already within the JS file to reduce chain file requests
+- Minimalism 2: jQuery is already within the JS file to reduce chain and external file requests
 - Firing the plugin happens already inside the JS file
-- no class attributes needed. Just link to the JPG, GIF or PNG file
+- no class attributes needed. Just link to the JPG, GIF, PNG or WebP file
 - double sized icons
 
 ## Features
@@ -37,7 +37,7 @@ Chrome, Safari, Firefox, Opera, IE9+, IOS4+, Android, windows phone.
 Include jquery and the swipebox script in your head tags or right before your body closing tag. If you already using jQuery elsewhere, please remove lines 1 - 3 in the JS file.
 
 ```html
-<script src="swipebox/swipebox.js"></script>
+<script defer src="swipebox/swipebox.js"></script>
 ```
 
 ### CSS
@@ -50,7 +50,7 @@ Include the swipebox CSS style in your head tags.
 
 ### HTML
 
-Just link the image (JPG, GIF or PNG) and optionally use the title attribute as caption.
+Just link the image (JPG, GIF, PNG or WebP) and optionally use the title attribute as caption.
 
 ```html
 <a href="big/image.jpg" title="My Caption">
