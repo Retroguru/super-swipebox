@@ -13,6 +13,7 @@ Swipebox is a jQuery "lightbox" plugin for desktop, mobile and tablet.
 
 - Minimalism 1: all unnecessary files removed
 - Minimalism 2: jQuery is already within the JS file to reduce chain and external file requests
+- Minimalism 3: loader.gif removed, now using rotating circle as loading screen via CSS. Another less file requests. ***new***
 - Firing the plugin happens already inside the JS file
 - no class attributes needed. Just link to the JPG, GIF, PNG or WebP file
 - double sized icons
