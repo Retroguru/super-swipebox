@@ -3,8 +3,6 @@ Super Swipebox
 
 A touchable jQuery lightbox.
 
-[View project page](https://swipebox.codes/)
-
 ## What is Swipebox ?
 
 Swipebox is a jQuery "lightbox" plugin for desktop, mobile and tablet.
