@@ -15,7 +15,6 @@ html.swipebox-html.swipebox-touch {
   left: 0;
   z-index: 99999 !important;
   overflow: hidden;
-  -webkit-user-select: none;
   user-select: none;
 }
 
@@ -26,7 +25,6 @@ html.swipebox-html.swipebox-touch {
 }
 
 #swipebox-slider {
-  -webkit-transition: -webkit-transform 0.4s ease;
   transition: transform 0.4s ease;
   height: 100%;
   left: 0;
@@ -69,7 +67,6 @@ html.swipebox-html.swipebox-touch {
   max-height: 100%;
   width: 100%;
   padding: 5%;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 #swipebox-slider .slide .swipebox-video-container .swipebox-video {
@@ -95,13 +92,7 @@ html.swipebox-html.swipebox-touch {
   top: 50%;
   left: 50%;
   position: absolute;
-  -webkit-animation: loading 800ms infinite linear;
   animation: loading 800ms infinite linear;
-}
-
-@-webkit-keyframes loading {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
 }
 
 @keyframes loading {
@@ -111,7 +102,6 @@ html.swipebox-html.swipebox-touch {
 
 #swipebox-bottom-bar,
 #swipebox-top-bar {
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   position: absolute;
   left: 0;
@@ -124,7 +114,6 @@ html.swipebox-html.swipebox-touch {
   bottom: -50px;
 }
 #swipebox-bottom-bar.visible-bars {
-  -webkit-transform: translate3d(0, -50px, 0);
   transform: translate3d(0, -50px, 0);
 }
 
@@ -132,7 +121,6 @@ html.swipebox-html.swipebox-touch {
   top: -50px;
 }
 #swipebox-top-bar.visible-bars {
-  -webkit-transform: translate3d(0, 50px, 0);
   transform: translate3d(0, 50px, 0);
 }
 
@@ -190,18 +178,14 @@ html.swipebox-html.swipebox-touch {
 }
 
 .swipebox-no-touch #swipebox-overlay.rightSpring #swipebox-slider {
-  -webkit-animation: rightSpring 0.3s;
   animation: rightSpring 0.3s;
 }
 .swipebox-no-touch #swipebox-overlay.leftSpring #swipebox-slider {
-  -webkit-animation: leftSpring 0.3s;
   animation: leftSpring 0.3s;
 }
 
 .swipebox-touch #swipebox-container:before, .swipebox-touch #swipebox-container:after {
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-transition: all .3s ease;
   transition: all .3s ease;
   content: ' ';
   position: absolute;
@@ -213,12 +197,10 @@ html.swipebox-html.swipebox-touch {
 }
 .swipebox-touch #swipebox-container:before {
   left: 0;
-  -webkit-box-shadow: inset 10px 0px 10px -8px #656565;
   box-shadow: inset 10px 0px 10px -8px #656565;
 }
 .swipebox-touch #swipebox-container:after {
   right: 0;
-  -webkit-box-shadow: inset -10px 0px 10px -8px #656565;
   box-shadow: inset -10px 0px 10px -8px #656565;
 }
 .swipebox-touch #swipebox-overlay.leftSpringTouch #swipebox-container:before {
@@ -228,20 +210,9 @@ html.swipebox-html.swipebox-touch {
   opacity: 1;
 }
 
-@-webkit-keyframes rightSpring {
-  0% { left: 0; }
-  50% { left: -30px; }
-  100% { left: 0; }
-}
-
 @keyframes rightSpring {
   0% { left: 0; }
   50% { left: -30px; }
-  100% { left: 0; }
-}
-@-webkit-keyframes leftSpring {
-  0% { left: 0; }
-  50% { left: 30px; }
   100% { left: 0; }
 }
 @keyframes leftSpring {
